@@ -1,0 +1,28 @@
+<html>
+   <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <style>
+           .my-input {
+               margin-bottom : 24px;
+           }
+           #login-screen {
+               display: flex;
+               flex-direction: column;
+               align-items: center; 
+               justify-content: center;
+           }
+       </style>
+       <script src='./html1.js'></script>
+   </head>
+   <body style='display: flex; align-items: center; justify-content: center;' onload='start()'>
+      <form id='login-screen'>
+            <input id='email' class='my-input' placeholder="Enter email address" type="email" autofocus="true" required/>
+            <input id='pass' class='my-input' placeholder="Enter password" type="password" required/>
+            <button type="submit" onclick="login()"> LOGIN </button>
+     </form>
+      <div id='second-screen'>
+            <button type="submit" onclick="logout()"> LOGOUT </button>
+      </div>
+        
+   </body>
+</html>
